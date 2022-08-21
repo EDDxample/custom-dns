@@ -1,6 +1,6 @@
 
 # Custom DNS
-simple DNS implementation in python (and rust, WIP)
+Basic DNS implementation in python (and rust, WIP)
 
 ## Example
 ![](assets/listener.png)
