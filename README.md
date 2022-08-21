@@ -1,8 +1,11 @@
 
 # Custom DNS
-simple DNS server in python and rust (WIP)
+simple DNS implementation in python (and rust, WIP)
 
-## Pictures
+## Example
+![](assets/listener.png)
+
+![](assets/consumer.png)
 
 
 ## Formats
@@ -78,7 +81,7 @@ RR -> Resource Record
 ```
 
 
-### Resources
+## Resources
 - RFC 1035: https://www.rfc-editor.org/rfc/rfc1035
-- Mediom post https://spathis.medium.com/how-dns-got-its-messages-on-diet-c49568b234a2#:~:text=DNS%20message%20compression%20refers%20to,location%20of%20their%20first%20occurrence.
+- Medium post: https://spathis.medium.com/how-dns-got-its-messages-on-diet-c49568b234a2#:~:text=DNS%20message%20compression%20refers%20to,location%20of%20their%20first%20occurrence.
 - Python series: https://www.youtube.com/watch?v=HdrPWGZ3NRo&list=PLBOh8f9FoHHhvO5e5HF_6mYvtZegobYX2
