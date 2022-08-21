@@ -102,9 +102,9 @@ class DNSPacket:
 
             rr = {}
 
-            if q['qtype'] not in (1, 28, 255):
+            if q['qtype'] not in (1, 28):
                 raise NotImplementedError(f'QUESTION TYPE: {q["qtype"]}')
-            if q['qclass'] not in (1,):
+            if q['qclass'] != 1:
                 raise NotImplementedError(f'QUESTION CLASS: {q["qclass"]}')
 
             rr['type']  = q['qtype']

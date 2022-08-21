@@ -11,11 +11,11 @@ def main():
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.bind((IP, PORT))
 
-    print('listening on', IP, PORT)
+    print('listening on port', PORT)
     while True:
         try:
             data, addr = sock.recvfrom(512)
-            print('\n[+] new connection received from', addr)
+            print(f'[+] new connection received from {addr[0]}:{addr[1]}')
 
             packet = DNSPacket(data)
             packet.compute_responses(ZONES)
